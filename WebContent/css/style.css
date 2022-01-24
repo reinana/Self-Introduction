@@ -1,0 +1,329 @@
+@charset "UTF-8";
+
+html {
+	font-size: 100%;
+}
+body {
+	background-color: transparent;
+	background-image: 
+		linear-gradient(0deg, transparent 31px, #e6df44 32px),
+		linear-gradient(90deg,  transparent 31px, #e6df44 32px);
+  	background-color: #fff;
+  	background-size: 32px 32px;
+  	margin: 0px;
+  	padding: 0px;
+}
+a {
+	text-decoration: none;
+}
+img {
+	max-width: 100%;
+}
+.d-flex {
+	display: flex;
+}
+/* ----- HEADER ----- */
+
+
+.logo {
+	width: 60px;
+	margin-top: 0px;
+}
+header {
+	position: fixed;/*固定する*/
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+nav {
+	margin: 0px;
+}
+.main-nav {
+	display: flex;
+	font-size: 1.25rem;
+	list-style: none;
+	margin-top: 42px;
+	margin-bottom: 0px;
+}
+.main-nav li {
+	margin: 0 20px ;
+}
+.main-nav a {
+	color: #fff;
+}
+.main-nav a:hover {
+	color: #0bd;
+}
+.page-header {
+	display: flex;
+	justify-content: space-between;
+	background-color: rgba(6, 56, 82, 0.7); /* 背景のみ半透明 */
+	padding: 0px;
+	margin: 0px;
+}
+.page-header h1 {
+	margin: 0px;
+	font-size: 3.5rem;
+	font-family: cursive, sans-serif;
+}
+.page-header a {
+	color: #fff;
+}
+.page-header a:hover {
+	color: #0bd;	
+}
+.wrapper {
+	max-width: 1100px;
+	margin: 0px;
+	padding: 0 4%;
+}
+#home {
+	background-image: url(../images/snowman_txt.jpg);
+	min-height: 100vh;
+}
+.big-bg {
+	background-size: cover;
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+
+/* -----MAIN------ */
+#main {
+	display: flex;
+	justify-content: center;
+	margin: auto;
+	align-items: center;
+	padding-left: 5rem;
+	padding-right:5rem;
+    padding-top: 2rem;
+}
+.right-box {
+	
+	margin: 3rem 3rem 0 3rem;
+	/* width: 100%; */
+	
+}
+.left-box {
+	display: flex;
+	margin: 3rem 3rem 0 3rem;
+	border-radius: 50%;
+	align-items: center;
+	/* width: 100%; */
+}
+.img-container {
+	border-radius: 50%;
+	height: 80%;
+}
+.maronana{
+    width: 100%;
+	border-radius: 50%;
+}
+
+.memo {
+  position: relative;
+  background: #F8F0D7;
+  border-left:4px dotted rgba(0,0,0,.1);
+  border-right:4px dotted rgba(0,0,0,.1);
+  box-shadow:0 0 5px rgba(0,0,0,.2);
+  padding: 1rem;
+  margin: 50px 0;
+  color: #65513f;
+  width: 300px;
+}
+.masking-tape{
+  position: absolute;
+  top: -1em;
+  left: 26%;
+  width:100px;
+  height:30px;
+  background-image: linear-gradient(-45deg, rgba(240,129,15,.4) 25%, transparent 25%, transparent 50%, rgba(240,129,15,.4) 50%, rgba(240,129,15,.4) 75%, transparent 75%, transparent 100%);
+  background-size: 20px 20px;
+  border-left:2px dotted rgba(0,0,0,.1);
+  border-right:2px dotted rgba(0,0,0,.1);
+  box-shadow:0 0 5px rgba(0,0,0,.2);
+  padding: 0.25em 2em;
+  color: #65513f;
+  transform: rotate(-4deg); 
+  text-align: center;
+  line-height: 1rem;
+}
+.memo ul {
+  color: #65513f;
+  padding: 0 20px;
+  list-style: none;
+  text-align: center;
+}
+.tape{
+  position: absolute;
+  top: -1.75em;
+  left: -1.5em;
+  background-color: rgba(255,255,255,.4);
+  border-left:2px dotted rgba(0,0,0,.1);
+  border-right:2px dotted rgba(0,0,0,.1);
+  box-shadow:0 0 5px rgba(0,0,0,0.2);
+  padding: 0.25em 2em;
+  color: #65513f;
+  transform: rotate(-3deg);
+  font-size: 2rem;
+
+}
+.tape-end {
+  position: absolute;
+  bottom: -0.75em;
+  right: -1em;
+  background-color: rgba(255,255,255,.4);
+  border-left:2px dotted rgba(0,0,0,.1);
+  border-right:2px dotted rgba(0,0,0,.1);
+  box-shadow:0 0 5px rgba(0,0,0,0.2);
+  padding: 0.25em 2em;
+  color: #65513f;
+  transform: rotate(-3deg);
+}
+
+.left-box {
+	position: relative;
+	background-color: #fff;
+	width: 300px;
+}
+
+/* -----掲示板----- */
+
+#bulletin-board {
+	justify-content: space-around;
+
+}
+.sled-container h2 {
+	background-color: #063852;
+	color: #fff;
+	padding: 1em;
+	margin: 0;
+	text-align: center;
+	
+}
+
+.kokuban {
+    
+    color: #fff;
+    background-color: #114400;
+    margin: 20px;
+    padding: 15px;
+    border: 9px solid #a60;
+    border-radius: 3px;
+    box-shadow: 2px 2px 4px #666, 2px 2px 2px #111 inset;
+    line-height: 1.9;
+}
+
+.message-box {
+	color: #65513f;
+
+	border-left:4px dotted rgba(0,0,0,.1);
+	border-right:4px dotted rgba(0,0,0,.1);
+	box-shadow:0 0 5px rgba(0,0,0,.2);
+	width: 300px;
+	margin: .5em;
+	
+}
+.message {
+	padding-left: 1em;
+}
+
+.bg-white {
+	background-color: #fff;
+}
+.bg-yellow {
+	background-color: #F8F0D7;
+}
+
+
+.message-box h3{
+  color: #65513f;
+  text-align: left;
+  margin: 0;
+}
+
+.replycontainer {
+	justify-content: flex-end;
+}
+.button{
+	color: #65513f;
+	background-color: rgba(240,129,15,.4);
+	border: 1px solid #65513f;
+	border-radius: 3px;
+	margin: .5em;
+	padding: 0 .2em;
+	
+}
+
+.button a {
+	color: #fff;
+}
+.button a:hover {
+	color: #0bd;	
+}
+
+.reply {
+	margin: .5em;
+	padding: 0 .2em;
+}
+.form-container {
+	position:fixed;
+	margin: .5em;
+	height: 5em;
+	padding: 2em;
+	color: #65513f;
+	align-items: center;
+}
+
+.box1 { /*【div】囲み枠部分*/
+  position: relative; /*必須*/
+  margin: 72px 16px 32px; /*外側の余白*/
+  padding: 16px; /*内側の余白*/
+  border: 5px solid rgba(240,129,15,.4); /*枠線）*/
+  background: #F8F0D7; /*背景色*/
+  color: #555; /*テキスト色*/
+}
+.box1 .box-title { /*【span】タイトル部分*/
+  position: absolute; /*必須*/
+  top: -40px; /*囲み枠の上を基準として外側（上）に40px移動*/
+  left: 12px;  /*囲み枠の左を基準として内側（右）に12px移動*/
+  line-height: 40px; /*行の高さ*/
+  padding: 0 16px; /*左右の余白*/
+  background: rgba(240,129,15,.7); /*背景色*/
+  border-radius: 5px 5px 0 0; /*角丸（左上5px 右上5px 右下0 左下0）*/
+  color: #fff; /*テキスト色*/
+  font-weight: bold; /*フォント太字*/
+  font-size: 120%; /*フォントサイズ変更*/
+  text-shadow: 2px 2px 5px #555; /*テキストに影を付ける*/
+}
+.labels {
+	flex-direction: column;
+	align-items:flex-end;
+}
+
+/* -----FOOTER----- */
+footer {
+	color: #fff;
+	background-color: #063852;
+	margin: 0;
+	padding: .2rem 0;
+	text-align: center;
+}
+
+/* -----レスポンシブ------- */
+@media (max-width: 960px) {
+	.page-header{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.main-nav {
+		padding-left: 0px;
+	}
+	#main {
+		
+		flex-direction: column;
+	}
+
+}
+
+
